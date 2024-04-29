@@ -4,7 +4,7 @@
 const gameBoard = document.querySelector(".game-board");
 for (let i = 0; i < 20 * 10; i++) {
     const gameCell = document.createElement("div");
-    gameCell.textContent = i;
+    // gameCell.textContent = i;
     gameCell.className = "game-cell";
     gameCell.setAttribute("data-cell-number", `${i}`);
     gameCell.setAttribute("data-piece", "");
