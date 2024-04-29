@@ -1,0 +1,31 @@
+.game-container{
+    display: flex;
+    gap: 30px;
+}
+
+.game-board {
+    display: grid;
+    width: 350px;
+    grid-template-columns: repeat(10, 1fr);    
+}
+
+.game-cell, .preview-cell {
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+}
+
+.held-piece {
+    display: grid;
+    width: 100px;
+    height: fit-content;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.grayed-out {
+    background-color: gray;
+}
+
+.ghost-piece-active {
+    border: 5px solid red !important;
+}
